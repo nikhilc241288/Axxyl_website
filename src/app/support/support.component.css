@@ -1,0 +1,42 @@
+/* Ensure that html and body fill the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .support-page-wrapper {
+    min-height: 50vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1; /* Takes up all available space, pushing footer to bottom */
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: lightgray;
+  }
+  
+  button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  /* Optional: If you want to style the footer further, you can add styles here */
+  

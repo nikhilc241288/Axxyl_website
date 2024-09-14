@@ -1,0 +1,119 @@
+/* Navbar brand styling */
+.mr-cust {
+  margin-right: 20px !important;
+  font-size: 28px !important;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+}
+
+.navbar-nav > li {
+  list-style: none;
+}
+
+.navbar-nav > li > a {
+  position: relative;
+  display: block !important;
+  padding: 10px 15px; /* Add some padding */
+  font-size: 16px;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0px;
+  background-color: #efefef !important;
+}
+
+.cust-border {
+  border: 1px solid #efefef !important;
+  border-radius: 5px !important;
+}
+
+.row-cust {
+  display: flex;
+  margin: 0px 15px;
+}
+
+.hidden-md-up {
+  display: none;
+}
+
+.col-cust {
+  width: 50%;
+}
+
+.top-register {
+  color: #0061fd;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+
+/* Ensure navbar items stay in one line on larger screens */
+@media (max-width: 991px) {
+  .cust-border {
+    margin-right: 13px !important;
+  }
+
+  .hidden-md-up {
+    display: flex;
+  }
+
+  .navbar-nav {
+    display: block; /* Make the navbar vertical on smaller screens */
+  }
+
+  .navbar-nav > li > a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .navbar-nav > li {
+    text-align: left; /* Ensure alignment is correct on smaller screens */
+  }
+}
+
+/* Ensure no wrapping of navbar items on larger screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .navbar-nav > li > a {
+    padding: 10px 15px;
+    margin-right: 5px; /* Adjust spacing between items */
+    font-size: 16px;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+
+  .navbar-nav > li:last-child > a {
+    margin-right: 0; /* Remove margin for last item */
+  }
+
+  .navbar-toggler {
+    display: none; /* Hide burger icon on larger screens */
+  }
+}

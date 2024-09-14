@@ -1,0 +1,74 @@
+<section class="section-lyla" id="gallery">
+  <div class="container-fluid text-center">
+    <h2 class="section-title white">Screenshot</h2>
+    <p class="section-subtitle white">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority<br />
+      have suffered alteration, by injected humour, or new randomised words.
+    </p>
+  </div>
+  <div class="mr-4">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container
+        *ngFor="let slide of slidesStore"
+        style="width: 500px; margin-right: 40px"
+      >
+        <ng-template carouselSlide [id]="slide.title">
+          <img
+            [src]="slide.src"
+            [alt]="slide.alt"
+            [title]="slide.title"
+            class="gallery-show"
+            loading="lazy"
+          />
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>
+
+
+<section class="section-white bottom-shape z-100" id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="./assets/benefits.png"
+          class="width-100"
+          alt="pic"
+          [@slidAnimation]
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 padding-top-20">
+        <h3>Get ready to discover all the benefits and secrets</h3>
+        <p>
+          AXXYL is a share ride service that provides the driver with total
+          control over there earnings with a 100% fare earned from each ride.
+          This provides a quality service based upon the driver and their
+          customer service they provide to the customer.
+        </p>
+        <p>
+          While providing great customer service And 100% fare earning to the
+          driver AXXYL will deliver the best quality lower fare than the leading
+          competitors.
+        </p>
+
+        <p>
+          <strong>Available Cars:</strong><br />
+          Axxyl will have all sorts of vehicles to suit your needs, including
+          vehicles to accomedate persons with a wheel chair.
+        </p>
+        <a href="#" class=""
+          ><img
+            src="./assets/images.png"
+            width="200"
+            style="margin-right: 20px"
+        /></a>
+        <a href="#" class=""
+          ><img src="./assets/google.png" width="200" loading="lazy"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>

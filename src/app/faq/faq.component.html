@@ -1,0 +1,213 @@
+<section class="section-white small-padding-bottom">
+  <!--begin container-->
+
+  <div class="container">
+    <!--begin row-->
+
+    <div class="row">
+      <!--begin col-md-6-->
+
+      
+
+      <!--end col-sm-6-->
+
+      <!--begin col-md-6-->
+
+      <div class="col-md-6">
+        <h3>Frequently Asked Questions</h3>
+
+        <!--begin panel-group -->
+
+        <div
+          class="panel-group"
+          id="accordion"
+          role="tablist"
+          aria-multiselectable="true"
+        >
+          <!--begin panel-default -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading1">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  (click)="onExpand('collapse1')"
+                  [attr.aria-expanded]="this.selectedFAQ == 'collapse1'"
+                >
+                  <fa-icon class="features_icons" [icon]="faPlus"></fa-icon>
+                  &nbsp; &nbsp; Will AXXYL Have airport service
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapse1"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              #collapse1="ngbCollapse"
+              [ngbCollapse]="!(this.selectedFAQ == 'collapse1')"
+            >
+              <div class="panel-body">
+                <p>
+                  yes, currently we are working on getting airport service to
+                  all airports.
+                </p>
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne16">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  (click)="onExpand('collapse2')"
+                  [attr.aria-expanded]="this.selectedFAQ == 'collapse2'"
+                  aria-expanded="true"
+                  aria-controls="collapseOne16"
+                >
+                  <fa-icon class="features_icons" [icon]="faPlus"></fa-icon>
+                  &nbsp; &nbsp; Does AXXYL Have customer support contact info
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseOne2"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne2"
+              #collapse2="ngbCollapse"
+              [ngbCollapse]="!(this.selectedFAQ == 'collapse2')"
+            >
+              <div class="panel-body">
+                <p>
+                  yes, you can email customer support 24hrs a day 7days a week.
+                </p>
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne17">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  (click)="onExpand('collapse3')"
+                  [attr.aria-expanded]="this.selectedFAQ == 'collapse3'"
+                  aria-expanded="true"
+                  aria-controls="collapseOne17"
+                >
+                  <fa-icon class="features_icons" [icon]="faPlus"></fa-icon>
+                  &nbsp; &nbsp; Will AXXYL have service for people with wheels
+                  chairs
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseOne17"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne17"
+              #collapse3="ngbCollapse"
+              [ngbCollapse]="!(this.selectedFAQ == 'collapse3')"
+            >
+              <div class="panel-body">
+                <p>
+                  Yes, there will be a service for disabled persons needing a
+                  ride with non electrical wheel chairs. Most drivers will be
+                  able to accept rides with one mechanical wheel chair depending
+                  on the vehicle that&rsquo;s is chosen. Some may require an
+                  upgraded ride for availability and size of the vehicle. Note:
+                  some fees may apply.
+                </p>
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne18">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  (click)="onExpand('collapse4')"
+                  [attr.aria-expanded]="this.selectedFAQ == 'collapse4'"
+                  aria-expanded="true"
+                  aria-controls="collapseOne18"
+                >
+                  <fa-icon class="features_icons" [icon]="faPlus"></fa-icon>
+                  &nbsp; &nbsp; Will AXXYL have back round checks for the
+                  drivers
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseOne18"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne18"
+              #collapse4="ngbCollapse"
+              [ngbCollapse]="!(this.selectedFAQ == 'collapse4')"
+            >
+              <div class="panel-body">
+                <p>
+                  Yes, all driver are required to have a background check. If
+                  the driver is servicing the airport there will be special
+                  requirements. The airport will require additional requirements
+                  from drivers.
+                </p>
+
+                <p>
+                  1: you must have a finger print background check and be
+                  approved. (Free of charge from the airport security Phoenix
+                  sky harbor)
+                </p>
+
+                <p>
+                  2: you must be able to pick up any person with a disability
+                  and store a wheel chair in your vehicle along with 1 piece of
+                  luggage up to 26&rdquo;x 19&rdquo; Note: See airport
+                  requirements in terms and conditions.
+                </p>
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne19">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  (click)="onExpand('collapse5')"
+                  [attr.aria-expanded]="this.selectedFAQ == 'collapse5'"
+                  aria-expanded="true"
+                  aria-controls="collapseOne19"
+                >
+                  <fa-icon class="features_icons" [icon]="faPlus"></fa-icon>
+                  &nbsp; &nbsp; (DRIVER)Can I get a refund of my monthly fee:
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseOne19"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne19"
+              #collapse5="ngbCollapse"
+              [ngbCollapse]="!(this.selectedFAQ == 'collapse5')"
+            >
+              <div class="panel-body">
+                <p>
+                  Yes, if you have not used the app in the month you have paid
+                  for the APP service fee you can get a full refund for that
+                  month. (Passenger) there is no monthly or yearly service fee.
+                  The app is free to all customers using AXXYL for a trip to
+                  there destinations.
+                </p>
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>-->
+              </div>
+            </div>
+          </div>
+          <!--end panel-default -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

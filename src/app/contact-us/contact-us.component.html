@@ -1,0 +1,207 @@
+<section class="section-white no-padding-bottom" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Get in touch</h4>
+        <p class="contact_success_box" style="display: none">
+          We received your message and you'll hear from us soon. Thank You!
+        </p>
+        <!--<form id="contact-form" class="contact" action="#" method="post">-->
+        <form
+          id="contact-form"
+          class="contact"
+          enctype="multipart/form-data"
+          accept-charset="utf-8"
+          novalidate
+          #contactUsForm="ngForm"
+        >
+          <div class="row">
+            <div class="col-md-4" style="height: 102px">
+              <input
+                class="contact-input white-input mb-0"
+                id="contact_names"
+                name="contact_names"
+                placeholder="Full Name*"
+                type="text"
+                ngModel
+                required
+                [pattern]="fieldPattern"
+              />
+              <div class="text-danger mb-5 mt-2 ml-2">
+                <span
+                  *ngIf="
+                    contactUsForm.form.controls.contact_names?.invalid &&
+                    (contactUsForm.form.controls.contact_names?.dirty ||
+                      contactUsForm.form.controls.contact_names?.touched ||
+                      formSubmitted)
+                  "
+                >
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_names?.errors
+                        ?.required
+                    "
+                  >
+                    Please Enter the full name
+                  </span>
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_names?.errors?.pattern
+                    "
+                  >
+                    Full Name is invalid
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4" style="height: 102px">
+              <input
+                class="contact-input white-input mb-0"
+                id="contact_email"
+                name="contact_email"
+                placeholder="Email Address*"
+                type="email"
+                ngModel
+                required
+                [pattern]="emailPattern"
+              />
+              <div class="text-danger mb-5 mt-2 ml-2">
+                <span
+                  *ngIf="
+                    contactUsForm.form.controls.contact_email?.invalid &&
+                    (contactUsForm.form.controls.contact_email?.dirty ||
+                      contactUsForm.form.controls.contact_email?.touched ||
+                      formSubmitted)
+                  "
+                >
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_email?.errors
+                        ?.required
+                    "
+                  >
+                    Please enter the email address
+                  </span>
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_email?.errors?.pattern
+                    "
+                  >
+                    Email Address is invalid
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4" style="height: 102px">
+              <input
+                class="contact-input white-input mb-0"
+                id="contact_phone"
+                name="contact_phone"
+                placeholder="Phone Number*"
+                type="text"
+                ngModel
+                required
+                pattern="[0-9]+"
+              />
+              <div class="text-danger mb-5 mt-2 ml-2">
+                <span
+                  *ngIf="
+                    contactUsForm.form.controls.contact_phone?.invalid &&
+                    (contactUsForm.form.controls.contact_phone?.dirty ||
+                      contactUsForm.form.controls.contact_phone?.touched ||
+                      formSubmitted)
+                  "
+                >
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_phone?.errors
+                        ?.required
+                    "
+                  >
+                    Please enter the phone number
+                  </span>
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_phone?.errors?.pattern
+                    "
+                  >
+                    Phone Number is invalid
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-12" style="height: 280px">
+              <textarea
+                class="contact-commnent white-input"
+                rows="2"
+                cols="20"
+                id="contact_message"
+                name="contact_message"
+                placeholder="Your Message..."
+                ngModel
+                required
+                [pattern]="fieldPattern"
+              ></textarea>
+              <div class="text-danger mb-5 ml-2">
+                <span
+                  *ngIf="
+                    contactUsForm.form.controls.contact_message?.invalid &&
+                    (contactUsForm.form.controls.contact_message?.dirty ||
+                      contactUsForm.form.controls.contact_message?.touched ||
+                      formSubmitted)
+                  "
+                >
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_message?.errors
+                        ?.required
+                    "
+                  >
+                    Please enter the message
+                  </span>
+                  <span
+                    *ngIf="
+                      contactUsForm.form.controls.contact_message?.errors
+                        ?.pattern
+                    "
+                  >
+                    Message is invalid
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button
+                (click)="sendEmail(contactUsForm)"
+                id="submit-button"
+                class="contact-submit"
+                type="button"
+              >
+                Send Message
+              </button>
+              <span
+                *ngIf="successMessageFlag"
+                class="text-success pl-3 pt-2 font-weight-bold"
+                [innerHTML]="successMessage"
+              >
+              </span>
+              <span
+                *ngIf="errorMessageFlag"
+                class="text-danger pl-3 font-weight-bold"
+                [innerHTML]="errorMessage"
+              >
+              </span>
+            </div>
+            <span style="margin-left: 10px" id="MES"></span>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-12">
+        <p class="contact-info">
+          <i class="fa fa-envelope-o"></i>
+          <a href="mailto:info@axxyl.com">info@axxyl.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

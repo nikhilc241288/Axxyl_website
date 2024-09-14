@@ -1,0 +1,19 @@
+.a-cust:hover,
+.a-cust:focus,
+.a-cust:active,
+.a-cust:visited {
+  text-decoration: none;
+}
+
+.a-cust:hover,
+.a-cust:focus {
+  text-decoration: none;
+  color: #0056b3;
+  outline: 0;
+  cursor: pointer;
+}
+.a-cust {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}

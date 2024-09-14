@@ -1,0 +1,9 @@
+.p-0-cust {
+  padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .p-0-cust {
+    padding: 0px 15px !important;
+  }
+}

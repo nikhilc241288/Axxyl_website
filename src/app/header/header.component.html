@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-fixed-top w-100 pl-0 pr-0" style="z-index: 1000" #nav>
+  <div class="container">
+    <a routerLink="/" class="navbar-brand mr-cust" id="logo">A X X Y L</a>
+
+    <button
+      class="navbar-toggler cust-border"
+      type="button"
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li><a routerLink="/" (click)="isMenuCollapsed = true">Home</a></li>
+        <li><a href="#pricing" (click)="isMenuCollapsed = true">About</a></li>
+        <li><a href="#gallery" (click)="isMenuCollapsed = true">Gallery</a></li>
+        <li><a routerLink="/AXXYL/taxes" (click)="isMenuCollapsed = true">Fees and Taxes</a></li>
+        <li><a href="#feature-new" (click)="isMenuCollapsed = true">Features</a></li>
+        <li><a href="#about" (click)="isMenuCollapsed = true">How it Works</a></li>
+        <li><a href="#contact" (click)="isMenuCollapsed = true">Contact us</a></li>
+        <li><a routerLink="/support" (click)="isMenuCollapsed = true">Support</a></li>
+        <li><a routerLink="/AXXYL/pages/registration" (click)="isMenuCollapsed = true">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row hidden-md-up m-auto w-100 pt-2">
+    <div class="col-6">
+      <a class="top-register" (click)="openDriver()">Driver Registration</a>
+    </div>
+    <div class="col-6">
+      <a class="top-register" (click)="openPassenger()">Passenger Registration</a>
+    </div>
+  </div>
+</nav>

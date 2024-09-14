@@ -1,0 +1,8 @@
+{
+    "/webservices_android": {
+      "target": "https://axxyl.com",
+      "secure": true,
+      "changeOrigin": true
+    }
+  }
+  

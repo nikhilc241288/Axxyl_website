@@ -1,0 +1,15 @@
+.pt-cust {
+  padding-top: 50px;
+}
+.mt-cust {
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  .pt-cust {
+    padding-top: 60px;
+  }
+  .mt-cust {
+    margin-top: 20px;
+  }
+}
