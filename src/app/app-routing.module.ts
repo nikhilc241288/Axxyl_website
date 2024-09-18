@@ -30,7 +30,7 @@ const routes: Routes = [
     path: 'AXXYL/pages/privacypolicy',
     component: PrivacyPolicyComponent,
   },
-  { path: 'support', component: SupportComponent },
+  { path: 'AXXYL/pages/support', component: SupportComponent },
   {
     path: '**',
     component: PageNotFoundComponent,

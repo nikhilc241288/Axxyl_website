@@ -5,12 +5,7 @@ html, body {
     padding: 0;
   }
   
-  .support-page-wrapper {
-    min-height: 50vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-  }
-  
+ 
   .main-content {
     flex: 1; /* Takes up all available space, pushing footer to bottom */
     padding: 20px;
